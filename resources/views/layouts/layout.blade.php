@@ -98,20 +98,6 @@
     <script src="{{ asset('plugins/sweetalert2/sweetalert2.min.js') }}"></script>
     <script src="{{ asset('plugins/toastr/toastr.min.js') }}"></script>
     <script src="{{ asset('alert/alert.js') }}"></script>
-
-    <script>
-        const url = window.location;
-        // for sidebar menu entirely but not cover treeview
-        $('a.nav-link').filter(function() {
-            return this.href == url;
-        }).siblings().removeClass('active').end().addClass('active');
-
-        // for treeview
-        // $('li.nav-item a').filter(function() {
-        //     return this.href == url;
-        // }).parentsUntil(".sidebar-menu > .treeview-menu").siblings().removeClass('active').end().addClass('active');
-    </script>
-
 </body>
 
 </html>
